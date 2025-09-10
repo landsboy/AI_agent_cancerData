@@ -8,11 +8,11 @@ Designed to minimize hallucinations via deterministic PubMed discovery, strict s
 
 • Discovery modes
 
-    • pubmed — deterministic PubMed E-utilities only (no LLM guesses).
+  • pubmed — deterministic PubMed E-utilities only (no LLM guesses).
 
-    • llm-grounded — LLM chooses only from PubMed-derived candidates (safer).
+  • llm-grounded — LLM chooses only from PubMed-derived candidates (safer).
 
-    • llm — free LLM discovery (flexible, but may hallucinate).
+  • llm — free LLM discovery (flexible, but may hallucinate).
 
 • Disease control — not locked to RCC. Pass --disease "non-small cell lung cancer" etc.
 
@@ -112,8 +112,8 @@ Each item adheres to:
 
 •  Export format is chosen by the --output suffix:
 
-    • .json → pretty JSON array
+  • .json → pretty JSON array
 
-    • .jsonl → one JSON object per line
+  • .jsonl → one JSON object per line
 
-    • .csv → header + rows
+  • .csv → header + rows

@@ -1,0 +1,35 @@
+name: AI_data_agent
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip>=23
+  - requests>=2.31
+  - urllib3>=2
+  - certifi
+  - ca-certificates
+  - openssl
+  - setuptools
+  - wheel
+  - tzdata
+
+  - pip:
+      # core
+      - python-dotenv>=1.0
+      - pydantic>=2.6
+      - langchain>=0.3.7
+      - langchain-community>=0.3.7
+      - langchain-perplexity>=0.1.8
+      - langchain-tavily>=0.1.0
+
+      # helpers LangChain/HTTP
+      - tiktoken>=0.7
+      - httpx>=0.27
+      - tenacity>=8.2
+      - typing-extensions>=4.8
+
+      # parsing utilities (useful for PubMed/tooling)
+      - beautifulsoup4>=4.12
+      - lxml>=4.9

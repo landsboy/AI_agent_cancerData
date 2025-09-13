@@ -1,3 +1,7 @@
+![LLM](https://img.shields.io/badge/LLM-blue) 
+![LangChain](https://img.shields.io/badge/LangChain-green) 
+![Python](https://img.shields.io/badge/Python-3.10-orange)
+
 # AI_agent_cancerData
 IO+TKI Literature Mining Agent
 

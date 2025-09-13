@@ -30,16 +30,16 @@ Designed to minimize hallucinations via deterministic PubMed discovery, strict s
 
 ```
 conda env create -f environment.yml
-conda activate AI_agent
+conda activate AI_data_agent
 ```
 2) **Environment variables**
 
-Create a .env in the project root:
+Create a `.env` in the project root:
 ```
 PERPLEXITY_API_KEY=your_perplexity_key
 TAVILY_API_KEY=your_tavily_key
 ```
-Only the keys you actually use are required. The code loads .env automatically (via python-dotenv).
+Only the keys you actually use are required. The code loads `.env` automatically (via python-dotenv).
 
 ## Running
 

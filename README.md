@@ -43,20 +43,20 @@ Only the keys you actually use are required. The code loads .env automatically (
 
 ## Running
 
-Assuming your package is AI_agent_cancerData and the entrypoint is AI_agent_cancerData/main.py, run from the project root:
+Assuming your package is src and the entrypoint is src/main.py, run from the project root:
 
 ```
-python -m AI_agent_cancerData.main [FLAGS...]
+python -m src.main [FLAGS...]
 ```
 
 ## Common examples
 
-**Deterministic PubMed discovery (recommended):**
+**AI LLM Agent:**
 
 ```
-python -m AI_agent_cancerData.main \
+python -m src.main \
   -i "IO+TKI in metastatic RCC, 2020–2025, with RNA-seq or H&E" \
-  --discovery pubmed \
+  --discovery llm \
   -o results/rcc_papers.json \
   -v
 ```
@@ -64,7 +64,7 @@ python -m AI_agent_cancerData.main \
 **LLM grounded to PubMed candidates (safer than free LLM):**
 
 ```
-python -m AI_agent_cancerData.main \
+python -m src.main \
   -i "First-line IO+TKI outcomes" \
   --discovery llm-grounded \
   -o results/papers.jsonl \
@@ -74,7 +74,7 @@ python -m AI_agent_cancerData.main \
 **Different disease (e.g., NSCLC) + strict verification + CSV output:**
 
 ```
-python -m AI_agent_cancerData.main \
+python -m src.main \
   -i "IO+TKI outcomes in advanced NSCLC, since 2019" \
   --disease "non-small cell lung cancer" \
   --discovery pubmed \
@@ -85,7 +85,7 @@ python -m AI_agent_cancerData.main \
 **Fast run without URL verification (may include dead links):**
 
 ```
-python -m AI_agent_cancerData.main \
+python -m src.main \
   -i "RCC IO+TKI with survival tables" \
   --discovery pubmed \
   --no-verify \

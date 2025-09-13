@@ -37,6 +37,7 @@ conda activate AI_data_agent
 Create a `.env` in the project root:
 ```
 PERPLEXITY_API_KEY=your_perplexity_key
+NCBI_API_KEY=your_ncbi_key
 TAVILY_API_KEY=your_tavily_key
 ```
 Only the keys you actually use are required. The code loads `.env` automatically (via python-dotenv).
